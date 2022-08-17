@@ -9,6 +9,8 @@ import { SerializedStyles, css } from "@emotion/react";
 
 export type Props = Readonly<ProfessionalHistoryObject>;
 
+const wrapBreak: string = "@media(max-width: 700px)";
+
 const containerStyles: SerializedStyles = css({
     padding: "6px 0",
 });
@@ -19,6 +21,9 @@ const metaInfoStyles: SerializedStyles = css({
     alignItems: "baseline",
     "& > * ": {
         display: "inline-block",
+    },
+    [wrapBreak]: {
+        flexDirection: "column",
     }
 });
 
@@ -34,6 +39,10 @@ const positionTitleStyles: SerializedStyles = css({
 
 const timespanStyles: SerializedStyles = css({
     fontSize: "1rem",
+    textAlign: "right",
+    [wrapBreak]: {
+        marginTop: "4px",
+    }
 });
 
 const descriptionStyles: SerializedStyles = css({
