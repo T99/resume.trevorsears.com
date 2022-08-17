@@ -16,7 +16,7 @@ export const PROFESSIONAL_HISTORY: ProfessionalHistoryObject[] = [
 	{
 		companyName: "Ampel Feedback",
 		positionTitle: "Front-end Developer & Designer",
-		startDate: "Sept. 2018",
+		startDate: "September 2018",
 		endDate: "March 2020",
 		description: "Developed a scratch-built front-end SPA framework for " +
 			"building highly dynamic and interactive web apps that was used " +
