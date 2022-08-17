@@ -15,6 +15,11 @@ import {
 import { ContactInformation } from "../components/contact-information";
 import { ResumeSection } from "../components/resume-section";
 import { Columns } from "../components/columns";
+import { Achievements } from "../components/achievements";
+import {
+	PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES,
+	PROGRAMMING_LANGUAGES
+} from "../data/technologies-and-languages-object";
 
 const pageContainerStyles: SerializedStyles = css({
 	height: "100%",
@@ -88,6 +93,14 @@ const Home: NextPage = (): ReactElement => {
 				
 				<ResumeSection title="Professional History">
 					{professionalHistory}
+				</ResumeSection>
+				
+				<ResumeSection title="Programming Languages">
+					<Achievements achievements={PROGRAMMING_LANGUAGES} />
+				</ResumeSection>
+				
+				<ResumeSection title="Technologies">
+					<Achievements achievements={PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES} />
 				</ResumeSection>
 				
 			</div>
