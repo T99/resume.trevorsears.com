@@ -19,7 +19,7 @@ const outerContainerStyles: SerializedStyles = css({
 });
 
 const sectionTitleStyles: SerializedStyles = css({
-	padding: "8px 16px",
+	padding: "10px 16px",
 	fontWeight: "bold",
 	fontSize: "1.75rem",
 	whiteSpace: "nowrap",
