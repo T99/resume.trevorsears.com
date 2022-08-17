@@ -10,7 +10,8 @@ const globalStyles: SerializedStyles = css({
 		boxSizing: "border-box",
 		padding: 0,
 		margin: 0,
-		fontFamily: "'Nunito Sans', sans-serif",
+		fontFamily: "'Playfair Display', sans-serif",
+		letterSpacing: "0.25px",
 		fontWeight: "normal",
 	},
 	"html, body, #__next": {
@@ -18,7 +19,7 @@ const globalStyles: SerializedStyles = css({
 		width: "100%",
 	},
 	"h1, h2, h3, h4, h5, h6": {
-		fontFamily: "'Montserrat', sans-serif", 
+		fontFamily: "'Fauna One', sans-serif", 
 	},
 	"span": {
 		fontFamily: "inherit",

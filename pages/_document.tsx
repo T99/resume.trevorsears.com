@@ -15,7 +15,7 @@ export default class CustomDocument extends Document {
 				<Head>
 					<link
 						rel="stylesheet"
-						href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;700&display=swap"
+						href="https://fonts.googleapis.com/css2?family=Fauna+One&family=Playfair+Display:wght@400;700&display=swap"
 					/>
 				</Head>
 				<body>
