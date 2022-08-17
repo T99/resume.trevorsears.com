@@ -33,7 +33,7 @@ const innerContainerStyles: SerializedStyles = css({
 
 const nameHeaderStyles: SerializedStyles = css({
 	fontSize: "4rem",
-	lineHeight: 0.75,
+	lineHeight: 1.1,
 	padding: "0.5rem",
 	textAlign: "center",
 });
