@@ -19,7 +19,7 @@ const outerContainerStyles: SerializedStyles = css({
 });
 
 const sectionTitleStyles: SerializedStyles = css({
-	padding: "8px 16px",
+	padding: "10px 16px",
 	fontWeight: "bold",
 	fontSize: "1.75rem",
 	whiteSpace: "nowrap",
@@ -38,7 +38,7 @@ export const ResumeSection: FunctionComponent<Props> = (
 	
 	return (
 		<div css={outerContainerStyles}>
-			<h3 css={sectionTitleStyles}>{title ?? ""}</h3>
+			{title ? <h3 css={sectionTitleStyles}>{title}</h3> : null}
 			<div css={innerContainerStyles}>
 				{children}
 			</div>

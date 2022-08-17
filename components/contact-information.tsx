@@ -14,7 +14,7 @@ const containerStyles: SerializedStyles = css({
 	padding: "6px 0",
 	"svg": {
 		height: "1.25rem",
-		marginRight: "6px",
+		marginRight: "8px",
 		transitionProperty: "color, transform",
 		transitionDuration: "250ms",
 		transitionTimingFunction: "linear",

@@ -15,8 +15,8 @@ const globalStyles: SerializedStyles = css({
 		fontWeight: "normal",
 	},
 	"html, body, #__next": {
-		height: "100%",
-		width: "100%",
+		minHeight: "100%",
+		minWidth: "100%",
 	},
 	"h1, h2, h3, h4, h5, h6": {
 		fontFamily: "'Fauna One', sans-serif", 
