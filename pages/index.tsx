@@ -8,6 +8,13 @@ import {
 	ProfessionalHistoryObject
 } from "../data/professional-history-object";
 import { ProfessionalHistory } from "../components/professional-history";
+import {
+	CONTACT_INFORMATION,
+	ContactInformationObject, FIND_ME_ONLINE
+} from "../data/contact-information-object";
+import { ContactInformation } from "../components/contact-information";
+import { ResumeSection } from "../components/resume-section";
+import { Columns } from "../components/columns";
 
 const pageContainerStyles: SerializedStyles = css({
 	height: "100%",
@@ -22,24 +29,23 @@ const pageContainerStyles: SerializedStyles = css({
 const innerContainerStyles: SerializedStyles = css({
 	width: "100%",
 	maxWidth: "1000px",
-	padding: "16px",
-	borderRadius: "12px",
-	backgroundColor: "#FFF3",
 });
 
 const nameHeaderStyles: SerializedStyles = css({
 	fontSize: "4rem",
 });
 
-const sectionHeaderStyles: SerializedStyles = css({
-	borderBottom: "2px solid white",
-}); 
-
-const professionalHistoryContainer: SerializedStyles = css({
-	
-});
-
 const Home: NextPage = (): ReactElement => {
+	
+	const contactInformation: ReactNode = CONTACT_INFORMATION.map(
+		(item: ContactInformationObject): ReactNode =>
+			<ContactInformation key={item.name} {...item} />
+	);
+	
+	const findMeOnline: ReactNode = FIND_ME_ONLINE.map(
+		(item: ContactInformationObject): ReactNode =>
+			<ContactInformation key={item.name} {...item} />
+	);
 	
 	const professionalHistory: ReactNode = PROFESSIONAL_HISTORY.map(
 		(item: ProfessionalHistoryObject): ReactNode =>
@@ -48,6 +54,7 @@ const Home: NextPage = (): ReactElement => {
 	
 	return (
 		<div css={pageContainerStyles}>
+			
 			<Head>
 				<title>Trevor Sears | Resume</title>
 				<meta name="description"
@@ -57,12 +64,29 @@ const Home: NextPage = (): ReactElement => {
 					  need to know about me!"
 				/>
 			</Head>
+			
 			<div css={innerContainerStyles}>
-				<h1 css={nameHeaderStyles}>Trevor Sears</h1>
-				<h2 css={sectionHeaderStyles}>Professional History</h2>
-				<div css={professionalHistoryContainer}>
+				
+				<ResumeSection>
+					<h1 css={nameHeaderStyles}>Trevor Sears</h1>
+				</ResumeSection>
+				
+				<Columns>
+					
+					<ResumeSection title="Contact Information">
+						{contactInformation}
+					</ResumeSection>
+					
+					<ResumeSection title="Find Me Online">
+						{findMeOnline}
+					</ResumeSection>
+				
+				</Columns>
+				
+				<ResumeSection title="Professional History">
 					{professionalHistory}
-				</div>
+				</ResumeSection>
+				
 			</div>
 			
 		</div>
