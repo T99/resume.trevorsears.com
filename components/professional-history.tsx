@@ -12,13 +12,16 @@ export type Props = Readonly<ProfessionalHistoryObject>;
 const wrapBreak: string = "@media(max-width: 700px)";
 
 const containerStyles: SerializedStyles = css({
-    padding: "6px 0",
+    "& + &": {
+        marginTop: "32px",
+    }
 });
 
 const metaInfoStyles: SerializedStyles = css({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "baseline",
+    marginBottom: "8px",
     "& > * ": {
         display: "inline-block",
     },
@@ -28,13 +31,14 @@ const metaInfoStyles: SerializedStyles = css({
 });
 
 const titleStyles: SerializedStyles = css({
-    fontSize: "1.1rem",
+    fontSize: "1.25rem",
     fontWeight: "bold",
 });
 
 const positionTitleStyles: SerializedStyles = css({
     fontSize: "1rem",
     fontWeight: "normal",
+    whiteSpace: "nowrap",
 });
 
 const timespanStyles: SerializedStyles = css({
