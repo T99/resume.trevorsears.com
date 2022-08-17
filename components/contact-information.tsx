@@ -41,6 +41,7 @@ const textStyles: SerializedStyles = css({
 	fontSize: "0.9rem",
 	letterSpacing: "0.7px",
 	fontFamily: "'Fauna One', sans-serif",
+	whiteSpace: "nowrap",
 });
 
 export const ContactInformation: FunctionComponent<Props> = (
