@@ -19,6 +19,9 @@ export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 		name: "Java",
 	},
 	{
+		name: "PHP",
+	},
+	{
 		name: "Python",
 	},
 	{
@@ -42,6 +45,12 @@ export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 	{
 		name: "SQL (MySQL, PSQL)",
 	},
+	{
+		name: "Bash Scripting",
+	},
+	{
+		name: "Powershell Scripting",
+	},
 ];
 
 export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
@@ -50,13 +59,16 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "*nix Shell",
 	},
 	{
-		name: "Windows Command Line & Powershell",
-	},
-	{
 		name: "Advanced *nix & Windows Literacy",
 	},
 	{
+		name: "Windows Command Line/Powershell",
+	},
+	{
 		name: "Domain & DNS Management",
+	},
+	{
+		name: "GSuite/Google Workspace Management",
 	},
 	{
 		name: "MySQL",
