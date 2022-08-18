@@ -33,5 +33,5 @@ export const PROFESSIONAL_HISTORY: ProfessionalHistoryObject[] = [
 			"CMS that specialized in the area of furniture eCommerce " +
 			"websites for a host of international clients."
 		
-	}
+	},
 ];
