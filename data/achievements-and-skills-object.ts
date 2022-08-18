@@ -59,7 +59,13 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "Domain & DNS Management",
 	},
 	{
-		name: "Relational Databasing (including MySQL, SQL Server, and Postgres)",
+		name: "MySQL",
+	},
+	{
+		name: "SQL Server",
+	},
+	{
+		name: "Postgres",
 	},
 	{
 		name: "NodeJS & NPM",
