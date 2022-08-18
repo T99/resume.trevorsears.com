@@ -31,7 +31,10 @@ export const PROFESSIONAL_HISTORY: ProfessionalHistoryObject[] = [
 		endDate: "Present",
 		description: "Worked to maintain and improve a proprietary PHP-based " +
 			"CMS that specialized in the area of furniture eCommerce " +
-			"websites for a host of international clients."
+			"websites for a host of international clients. Operated as a " +
+			"member of a small team responsible for backing 40+ sites, as " +
+			"well as a database catalogue of hundreds of thousands of " +
+			"products, associated product information, and eCommerce data."
 		
 	},
 ];
