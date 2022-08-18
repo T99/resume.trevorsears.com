@@ -13,6 +13,7 @@ export type Props = Readonly<ContactInformationObject>;
 const containerStyles: SerializedStyles = css({
 	padding: "6px 0",
 	"svg": {
+		flex: "0 0 auto",
 		height: "1.25rem",
 		marginRight: "8px",
 		transitionProperty: "color, transform",
