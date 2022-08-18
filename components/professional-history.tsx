@@ -62,6 +62,7 @@ const descriptionStyles: SerializedStyles = css({
     color: "#D9E8F7",
     fontSize: "0.9rem",
     lineHeight: 1.6,
+    textAlign: "justify",
 });
 
 export const ProfessionalHistory: FunctionComponent<Props> = (
