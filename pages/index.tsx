@@ -48,6 +48,11 @@ const nameHeaderStyles: SerializedStyles = css({
 	textAlign: "center",
 });
 
+const metaTitle: string = "Trevor Sears | Resume";
+const metaDescription: string = "An overview of my professional background, " +
+	"experience, accomplishments, and outlook. This document aims to detail " +
+	"anything that a potential employer might need to know about me!";
+
 const Home: NextPage = (): ReactElement => {
 	
 	const contactInformation: ReactNode = CONTACT_INFORMATION.map(
@@ -69,13 +74,23 @@ const Home: NextPage = (): ReactElement => {
 		<div css={pageContainerStyles}>
 			
 			<Head>
-				<title>Trevor Sears | Resume</title>
-				<meta name="description"
-					  content="An overview of my professional background,
-					  experience, accomplishments, and outlook. This document
-					  aims to detail anything that a potential employer might
-					  need to know about me!"
-				/>
+				<title>{metaTitle}</title>
+				<meta name="description" content={metaDescription}/>
+				<meta property="og:title" content={metaTitle} />
+				<meta property="og:description" content={metaDescription} />
+				<meta property="og:type" content="profile" />
+				<meta property="og:url"
+					  content="https://resume.trevorsears.com/" />
+				<meta property="og:image"
+					  content="https://resume.trevorsears.com/headshot.jpg" />
+				<meta property="og:image:type" content="image/jpeg" />
+				<meta property="og:image:width" content="961" />
+				<meta property="og:image:height" content="961" />
+				<meta property="og:image:alt"
+					  content="A headshot image of Trevor Sears." />
+				<meta property="profile:first_name" content="Trevor" />
+				<meta property="profile:last_name" content="Sears" />
+				<meta property="profile:gender" content="male" />
 			</Head>
 			
 			<div css={innerContainerStyles}>
