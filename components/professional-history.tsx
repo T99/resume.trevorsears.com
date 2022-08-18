@@ -12,8 +12,9 @@ export type Props = Readonly<ProfessionalHistoryObject>;
 const wrapBreak: string = "@media(max-width: 700px)";
 
 const containerStyles: SerializedStyles = css({
+    margin: "4px",
     "& + &": {
-        marginTop: "32px",
+        marginTop: "20px",
     }
 });
 
@@ -22,7 +23,7 @@ const metaInfoStyles: SerializedStyles = css({
     justifyContent: "space-between",
     alignItems: "baseline",
     marginBottom: "8px",
-    "& > * ": {
+    "& > *": {
         display: "inline-block",
     },
     [wrapBreak]: {
@@ -31,21 +32,29 @@ const metaInfoStyles: SerializedStyles = css({
 });
 
 const titleStyles: SerializedStyles = css({
+    marginRight: "20px",
     fontSize: "1.25rem",
     fontWeight: "bold",
 });
 
 const positionTitleStyles: SerializedStyles = css({
+    flex: "0 0 auto",
     fontSize: "1rem",
     fontWeight: "normal",
     whiteSpace: "nowrap",
+    [wrapBreak]: {
+        whiteSpace: "unset",
+    }
 });
 
 const timespanStyles: SerializedStyles = css({
     fontSize: "1rem",
     textAlign: "right",
+    whiteSpace: "nowrap",
     [wrapBreak]: {
         marginTop: "4px",
+        textAlign: "unset",
+        whiteSpace: "unset",
     }
 });
 
@@ -53,6 +62,7 @@ const descriptionStyles: SerializedStyles = css({
     color: "#D9E8F7",
     fontSize: "0.9rem",
     lineHeight: 1.6,
+    textAlign: "justify",
 });
 
 export const ProfessionalHistory: FunctionComponent<Props> = (

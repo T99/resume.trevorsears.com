@@ -4,7 +4,6 @@
  * Project: resume.trevorsears.com
  */
 
-import { ProfessionalHistoryObject } from "../data/professional-history-object";
 import { css, SerializedStyles } from "@emotion/react";
 import React, { FunctionComponent, ReactElement, ReactNode } from "react";
 
@@ -19,11 +18,13 @@ const outerContainerStyles: SerializedStyles = css({
 });
 
 const sectionTitleStyles: SerializedStyles = css({
-	padding: "10px 16px",
+	margin: "0 8px",
+	padding: "10px 8px",
 	fontWeight: "bold",
 	fontSize: "1.75rem",
-	whiteSpace: "nowrap",
-	lineHeight: 1,
+	"@media print": {
+		borderBottom: "2px solid black",
+	},
 });
 
 const innerContainerStyles: SerializedStyles = css({

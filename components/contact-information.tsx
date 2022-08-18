@@ -13,12 +13,16 @@ export type Props = Readonly<ContactInformationObject>;
 const containerStyles: SerializedStyles = css({
 	padding: "6px 0",
 	"svg": {
+		flex: "0 0 auto",
 		height: "1.25rem",
 		marginRight: "8px",
 		transitionProperty: "color, transform",
 		transitionDuration: "250ms",
 		transitionTimingFunction: "linear",
 		willChange: "transform",
+		"@media print": {
+			color: "black",
+		}
 	}
 });
 
@@ -37,11 +41,12 @@ const linkStyles: SerializedStyles = css({
 });
 
 const textStyles: SerializedStyles = css({
-	lineHeight: 0,
 	fontSize: "0.9rem",
 	letterSpacing: "0.7px",
 	fontFamily: "'Fauna One', sans-serif",
 	whiteSpace: "nowrap",
+	overflow: "hidden",
+	textOverflow: "ellipsis",
 });
 
 export const ContactInformation: FunctionComponent<Props> = (
@@ -50,7 +55,7 @@ export const ContactInformation: FunctionComponent<Props> = (
 	
 	return (
 		<div css={containerStyles} title={name}>
-			<a css={linkStyles} href={link} target="_blank" rel="noreferrer noopen">
+			<a css={linkStyles} href={link} target="_blank" rel="noopener noreferrer">
 				{(icon as unknown as () => ReactNode)()}
 				<p css={textStyles}>{content}</p>
 			</a>

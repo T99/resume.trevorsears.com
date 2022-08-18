@@ -8,14 +8,14 @@ import { ProfessionalHistoryObject } from "../data/professional-history-object";
 import { css, SerializedStyles } from "@emotion/react";
 import React, { FunctionComponent, ReactElement, ReactNode } from "react";
 import {
-	TechnologiesAndLanguagesObject
-} from "../data/technologies-and-languages-object";
+	AchievementsAndSkillsObject
+} from "../data/achievements-and-skills-object";
 
 export type Props = Readonly<{
-	achievements: TechnologiesAndLanguagesObject[],
+	achievements: AchievementsAndSkillsObject[],
 }>;
 
-const wrapBreak: string = "@media(max-width: 700px)";
+const printMediaQuery: string = "@media print";
 
 const outerContainerStyles: SerializedStyles = css({
 	display: "flex",
@@ -26,12 +26,14 @@ const outerContainerStyles: SerializedStyles = css({
 
 const innerContainerStyles: SerializedStyles = css({
 	width: "100%",
-	maxWidth: "650px",
 	display: "flex",
 	flexDirection: "row",
 	flexWrap: "wrap",
 	justifyContent: "center",
 	alignItems: "flex-start",
+	[printMediaQuery]: {
+		justifyContent: "flex-start",
+	}
 });  
 
 const achievementContainerStyles: SerializedStyles = css({
@@ -40,6 +42,11 @@ const achievementContainerStyles: SerializedStyles = css({
 	borderRadius: "6px",
 	margin: "8px 16px",
 	backgroundColor: "#FFF1",
+	[printMediaQuery]: {
+		minWidth: "unset",
+		padding: 0,
+		margin: "8px 24px",
+	}
 });
 
 const achievementTextStyles: SerializedStyles = css({
@@ -52,7 +59,7 @@ export const Achievements: FunctionComponent<Props> = (
 ): ReactElement => {
 	
 	const items: ReactNode = achievements.map(
-		({ name }: TechnologiesAndLanguagesObject) => (
+		({ name }: AchievementsAndSkillsObject) => (
 			<div key={name} css={achievementContainerStyles}>
 				<p css={achievementTextStyles}>{name}</p>
 			</div>

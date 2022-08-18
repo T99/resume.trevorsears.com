@@ -4,15 +4,11 @@
  * Project: resume.trevorsears.com
  */
 
-export type TechnologiesAndLanguagesObject = {
+export type AchievementsAndSkillsObject = {
 	name: string,
 };
 
-export const TECHNOLOGIES_AND_LANGUAGES: TechnologiesAndLanguagesObject[] = [
-	
-];
-
-export const PROGRAMMING_LANGUAGES: TechnologiesAndLanguagesObject[] = [
+export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 	{
 		name: "C",
 	},
@@ -21,6 +17,9 @@ export const PROGRAMMING_LANGUAGES: TechnologiesAndLanguagesObject[] = [
 	},
 	{
 		name: "Java",
+	},
+	{
+		name: "PHP",
 	},
 	{
 		name: "Python",
@@ -46,24 +45,39 @@ export const PROGRAMMING_LANGUAGES: TechnologiesAndLanguagesObject[] = [
 	{
 		name: "SQL (MySQL, PSQL)",
 	},
+	{
+		name: "Bash Scripting",
+	},
+	{
+		name: "Powershell Scripting",
+	},
 ];
 
 export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
-	TechnologiesAndLanguagesObject[] = [
+	AchievementsAndSkillsObject[] = [
 	{
 		name: "*nix Shell",
-	},
-	{
-		name: "Windows Command Line & Powershell",
 	},
 	{
 		name: "Advanced *nix & Windows Literacy",
 	},
 	{
+		name: "Windows Command Line/Powershell",
+	},
+	{
 		name: "Domain & DNS Management",
 	},
 	{
-		name: "Relational Databasing (including MySQL, SQL Server, and Postgres)",
+		name: "GSuite/Google Workspace Management",
+	},
+	{
+		name: "MySQL",
+	},
+	{
+		name: "SQL Server",
+	},
+	{
+		name: "Postgres",
 	},
 	{
 		name: "NodeJS & NPM",
@@ -84,9 +98,9 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "Webpack, Babel, Browserify",
 	},
 	{
-		name: "AWS (S3, EC2, Cloudfront, Lambda, etc)",
+		name: "DigitalOcean",
 	},
 	{
-		name: "DigitalOcean",
+		name: "AWS (S3, EC2, Cloudfront, Lambda, etc)",
 	},
 ];

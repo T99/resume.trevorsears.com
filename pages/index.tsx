@@ -19,7 +19,7 @@ import { Achievements } from "../components/achievements";
 import {
 	PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES,
 	PROGRAMMING_LANGUAGES
-} from "../data/technologies-and-languages-object";
+} from "../data/achievements-and-skills-object";
 
 const pageContainerStyles: SerializedStyles = css({
 	height: "100%",
@@ -34,6 +34,11 @@ const pageContainerStyles: SerializedStyles = css({
 const innerContainerStyles: SerializedStyles = css({
 	width: "100%",
 	maxWidth: "1000px",
+	"& > div > div > h3": {
+		"@media(min-width: 500px)": {
+			whiteSpace: "nowrap",
+		}
+	}
 });
 
 const nameHeaderStyles: SerializedStyles = css({
