@@ -4,15 +4,11 @@
  * Project: resume.trevorsears.com
  */
 
-export type TechnologiesAndLanguagesObject = {
+export type AchievementsAndSkillsObject = {
 	name: string,
 };
 
-export const TECHNOLOGIES_AND_LANGUAGES: TechnologiesAndLanguagesObject[] = [
-	
-];
-
-export const PROGRAMMING_LANGUAGES: TechnologiesAndLanguagesObject[] = [
+export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 	{
 		name: "C",
 	},
@@ -49,7 +45,7 @@ export const PROGRAMMING_LANGUAGES: TechnologiesAndLanguagesObject[] = [
 ];
 
 export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
-	TechnologiesAndLanguagesObject[] = [
+	AchievementsAndSkillsObject[] = [
 	{
 		name: "*nix Shell",
 	},

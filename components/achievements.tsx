@@ -8,11 +8,11 @@ import { ProfessionalHistoryObject } from "../data/professional-history-object";
 import { css, SerializedStyles } from "@emotion/react";
 import React, { FunctionComponent, ReactElement, ReactNode } from "react";
 import {
-	TechnologiesAndLanguagesObject
-} from "../data/technologies-and-languages-object";
+	AchievementsAndSkillsObject
+} from "../data/achievements-and-skills-object";
 
 export type Props = Readonly<{
-	achievements: TechnologiesAndLanguagesObject[],
+	achievements: AchievementsAndSkillsObject[],
 }>;
 
 const wrapBreak: string = "@media(max-width: 700px)";
@@ -52,7 +52,7 @@ export const Achievements: FunctionComponent<Props> = (
 ): ReactElement => {
 	
 	const items: ReactNode = achievements.map(
-		({ name }: TechnologiesAndLanguagesObject) => (
+		({ name }: AchievementsAndSkillsObject) => (
 			<div key={name} css={achievementContainerStyles}>
 				<p css={achievementTextStyles}>{name}</p>
 			</div>

@@ -19,7 +19,7 @@ import { Achievements } from "../components/achievements";
 import {
 	PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES,
 	PROGRAMMING_LANGUAGES
-} from "../data/technologies-and-languages-object";
+} from "../data/achievements-and-skills-object";
 
 const pageContainerStyles: SerializedStyles = css({
 	height: "100%",
