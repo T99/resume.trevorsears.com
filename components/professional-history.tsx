@@ -32,21 +32,29 @@ const metaInfoStyles: SerializedStyles = css({
 });
 
 const titleStyles: SerializedStyles = css({
+    marginRight: "20px",
     fontSize: "1.25rem",
     fontWeight: "bold",
 });
 
 const positionTitleStyles: SerializedStyles = css({
+    flex: "0 0 auto",
     fontSize: "1rem",
     fontWeight: "normal",
     whiteSpace: "nowrap",
+    [wrapBreak]: {
+        whiteSpace: "unset",
+    }
 });
 
 const timespanStyles: SerializedStyles = css({
     fontSize: "1rem",
     textAlign: "right",
+    whiteSpace: "nowrap",
     [wrapBreak]: {
         marginTop: "4px",
+        textAlign: "unset",
+        whiteSpace: "unset",
     }
 });
 
