@@ -52,7 +52,7 @@ export const ContactInformation: FunctionComponent<Props> = (
 	
 	return (
 		<div css={containerStyles} title={name}>
-			<a css={linkStyles} href={link} target="_blank" rel="noreferrer noopen">
+			<a css={linkStyles} href={link} target="_blank" rel="noopener noreferrer">
 				{(icon as unknown as () => ReactNode)()}
 				<p css={textStyles}>{content}</p>
 			</a>
