@@ -101,6 +101,6 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "DigitalOcean",
 	},
 	{
-		name: "AWS (S3, EC2, Cloudfront, Lambda, etc)",
+		name: "AWS (S3, EC2, Cloudfront, Lambda, etc.)",
 	},
 ];
