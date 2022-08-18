@@ -4,7 +4,6 @@
  * Project: resume.trevorsears.com
  */
 
-import { ProfessionalHistoryObject } from "../data/professional-history-object";
 import { css, SerializedStyles } from "@emotion/react";
 import React, { FunctionComponent, ReactElement, ReactNode } from "react";
 
