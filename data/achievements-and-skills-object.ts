@@ -98,9 +98,9 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "Webpack, Babel, Browserify",
 	},
 	{
-		name: "AWS (S3, EC2, Cloudfront, Lambda, etc)",
+		name: "DigitalOcean",
 	},
 	{
-		name: "DigitalOcean",
+		name: "AWS (S3, EC2, Cloudfront, Lambda, etc)",
 	},
 ];
