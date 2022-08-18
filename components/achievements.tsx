@@ -15,7 +15,7 @@ export type Props = Readonly<{
 	achievements: AchievementsAndSkillsObject[],
 }>;
 
-const wrapBreak: string = "@media(max-width: 700px)";
+const printMediaQuery: string = "@media print";
 
 const outerContainerStyles: SerializedStyles = css({
 	display: "flex",
@@ -32,6 +32,9 @@ const innerContainerStyles: SerializedStyles = css({
 	flexWrap: "wrap",
 	justifyContent: "center",
 	alignItems: "flex-start",
+	[printMediaQuery]: {
+		justifyContent: "flex-start",
+	}
 });  
 
 const achievementContainerStyles: SerializedStyles = css({
@@ -40,6 +43,11 @@ const achievementContainerStyles: SerializedStyles = css({
 	borderRadius: "6px",
 	margin: "8px 16px",
 	backgroundColor: "#FFF1",
+	[printMediaQuery]: {
+		minWidth: "unset",
+		padding: 0,
+		margin: "8px 24px",
+	}
 });
 
 const achievementTextStyles: SerializedStyles = css({

@@ -20,6 +20,9 @@ const containerStyles: SerializedStyles = css({
 		transitionDuration: "250ms",
 		transitionTimingFunction: "linear",
 		willChange: "transform",
+		"@media print": {
+			color: "black",
+		}
 	}
 });
 
