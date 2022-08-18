@@ -34,6 +34,11 @@ const pageContainerStyles: SerializedStyles = css({
 const innerContainerStyles: SerializedStyles = css({
 	width: "100%",
 	maxWidth: "1000px",
+	"& > div > div > h3": {
+		"@media(min-width: 500px)": {
+			whiteSpace: "nowrap",
+		}
+	}
 });
 
 const nameHeaderStyles: SerializedStyles = css({
