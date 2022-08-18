@@ -12,8 +12,9 @@ export type Props = Readonly<ProfessionalHistoryObject>;
 const wrapBreak: string = "@media(max-width: 700px)";
 
 const containerStyles: SerializedStyles = css({
+    margin: "4px",
     "& + &": {
-        marginTop: "32px",
+        marginTop: "20px",
     }
 });
 
