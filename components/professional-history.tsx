@@ -23,7 +23,7 @@ const metaInfoStyles: SerializedStyles = css({
     justifyContent: "space-between",
     alignItems: "baseline",
     marginBottom: "8px",
-    "& > * ": {
+    "& > *": {
         display: "inline-block",
     },
     [wrapBreak]: {
