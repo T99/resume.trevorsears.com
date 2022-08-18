@@ -26,7 +26,7 @@ const outerContainerStyles: SerializedStyles = css({
 
 const innerContainerStyles: SerializedStyles = css({
 	width: "100%",
-	maxWidth: "650px",
+	// maxWidth: "650px",
 	display: "flex",
 	flexDirection: "row",
 	flexWrap: "wrap",
