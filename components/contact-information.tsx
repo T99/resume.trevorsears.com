@@ -37,11 +37,12 @@ const linkStyles: SerializedStyles = css({
 });
 
 const textStyles: SerializedStyles = css({
-	lineHeight: 0,
 	fontSize: "0.9rem",
 	letterSpacing: "0.7px",
 	fontFamily: "'Fauna One', sans-serif",
 	whiteSpace: "nowrap",
+	overflow: "hidden",
+	textOverflow: "ellipsis",
 });
 
 export const ContactInformation: FunctionComponent<Props> = (
