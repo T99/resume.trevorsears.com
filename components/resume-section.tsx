@@ -39,7 +39,7 @@ export const ResumeSection: FunctionComponent<Props> = (
 	
 	return (
 		<div css={outerContainerStyles}>
-			{title ? <h3 css={sectionTitleStyles}>{title}</h3> : null}
+			{title ? <h2 css={sectionTitleStyles}>{title}</h2> : null}
 			<div css={innerContainerStyles}>
 				{children}
 			</div>
