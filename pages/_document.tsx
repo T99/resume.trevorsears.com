@@ -11,7 +11,7 @@ export default class CustomDocument extends Document {
 	public render(): JSX.Element {
 		
 		return (
-			<Html>
+			<Html lang="en">
 				<Head>
 					{/* Google Tag Manager */}
 					<script dangerouslySetInnerHTML={{__html: `
