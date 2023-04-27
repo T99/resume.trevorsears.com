@@ -13,6 +13,9 @@ export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 		name: "C",
 	},
 	{
+		name: "C#/.NET",
+	},
+	{
 		name: "C++",
 	},
 	{
@@ -34,6 +37,12 @@ export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 		name: "TypeScript",
 	},
 	{
+		name: "Go",
+	},
+	{
+		name: "Ruby",
+	},
+	{
 		name: "HTML",
 	},
 	{
@@ -46,20 +55,20 @@ export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 		name: "SQL (MySQL, PSQL)",
 	},
 	{
-		name: "Bash Scripting",
+		name: "Dash/Bash Scripting",
 	},
 	{
 		name: "Powershell Scripting",
+	},
+	{
+		name: "Regular Expressions (PCRE, etc.)",
 	},
 ];
 
 export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 	AchievementsAndSkillsObject[] = [
 	{
-		name: "*nix Shell",
-	},
-	{
-		name: "Advanced *nix & Windows Literacy",
+		name: "Advanced *nix Shell",
 	},
 	{
 		name: "Windows Command Line/Powershell",
@@ -71,6 +80,9 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "GSuite/Google Workspace Management",
 	},
 	{
+		name: "Advanced Git Literacy",
+	},
+	{
 		name: "MySQL",
 	},
 	{
@@ -80,6 +92,9 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "Postgres",
 	},
 	{
+		name: "MongoDB/NoSQL",
+	},
+	{
 		name: "NodeJS & NPM",
 	},
 	{
@@ -87,6 +102,9 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 	},
 	{
 		name: "NextJS",
+	},
+	{
+		name: "Vercel",
 	},
 	{
 		name: "Vue",
