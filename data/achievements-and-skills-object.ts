@@ -10,31 +10,34 @@ export type AchievementsAndSkillsObject = {
 
 export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 	{
-		name: "C",
+		name: "JavaScript",
 	},
 	{
-		name: "C#/.NET",
-	},
-	{
-		name: "C++",
-	},
-	{
-		name: "Java",
-	},
-	{
-		name: "PHP",
-	},
-	{
-		name: "Python",
+		name: "TypeScript",
 	},
 	{
 		name: "Rust",
 	},
 	{
-		name: "JavaScript",
+		name: "PHP",
 	},
 	{
-		name: "TypeScript",
+		name: "Dash/Bash Scripting",
+	},
+	{
+		name: "C",
+	},
+	{
+		name: "C++",
+	},
+	{
+		name: "C#/.NET",
+	},
+	{
+		name: "Java",
+	},
+	{
+		name: "Python",
 	},
 	{
 		name: "Go",
@@ -55,9 +58,6 @@ export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 		name: "SQL (MySQL, PSQL)",
 	},
 	{
-		name: "Dash/Bash Scripting",
-	},
-	{
 		name: "Powershell Scripting",
 	},
 	{
@@ -68,7 +68,22 @@ export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 	AchievementsAndSkillsObject[] = [
 	{
+		name: "ReactJS",
+	},
+	{
+		name: "NextJS",
+	},
+	{
 		name: "Advanced *nix Shell",
+	},
+	{
+		name: "MongoDB/NoSQL",
+	},
+	{
+		name: "NodeJS & NPM",
+	},
+	{
+		name: "Advanced Git",
 	},
 	{
 		name: "Windows Command Line/Powershell",
@@ -80,25 +95,10 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "GSuite/Google Workspace Management",
 	},
 	{
-		name: "Advanced Git",
-	},
-	{
 		name: "MySQL",
 	},
 	{
 		name: "Postgres",
-	},
-	{
-		name: "MongoDB/NoSQL",
-	},
-	{
-		name: "NodeJS & NPM",
-	},
-	{
-		name: "ReactJS",
-	},
-	{
-		name: "NextJS",
 	},
 	{
 		name: "Vercel",
