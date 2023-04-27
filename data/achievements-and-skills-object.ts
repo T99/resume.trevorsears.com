@@ -86,9 +86,6 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "MySQL",
 	},
 	{
-		name: "SQL Server",
-	},
-	{
 		name: "Postgres",
 	},
 	{
