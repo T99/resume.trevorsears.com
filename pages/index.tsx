@@ -48,6 +48,15 @@ const nameHeaderStyles: SerializedStyles = css({
 	textAlign: "center",
 });
 
+const footerTextStyles: SerializedStyles = css({
+	opacity: 0.5,
+	marginTop: "calc(2.5vh - 10px)",
+	fontSize: "0.9em",
+	"a": {
+		color: "inherit",
+	},
+});
+
 const metaTitle: string = "Trevor Sears | Resume";
 const metaDescription: string = "An overview of my professional background, " +
 	"experience, accomplishments, and outlook. This document aims to detail " +
@@ -115,7 +124,7 @@ const Home: NextPage = (): ReactElement => {
 					{professionalHistory}
 				</ResumeSection>
 				
-				<ResumeSection title="Programming Languages">
+				<ResumeSection title="Programming & Scripting Languages">
 					<Achievements achievements={PROGRAMMING_LANGUAGES} />
 				</ResumeSection>
 				
@@ -124,6 +133,21 @@ const Home: NextPage = (): ReactElement => {
 				</ResumeSection>
 				
 			</div>
+			
+			<p css={footerTextStyles}>
+				Build with{" "}
+				<a href="https://react.dev/"
+				   target="_blank"
+				   rel="noreferrer">React</a>{" "}
+				and{" "}
+				<a href="https://nextjs.org/"
+				   target="_blank"
+				   rel="noreferrer">NextJS</a>,{" "}
+				hosted on{" "}
+				<a href="https://vercel.com/home"
+				   target="_blank"
+				   rel="noreferrer">{"\u25B2"}Vercel</a>.
+			</p>
 			
 		</div>
 	);

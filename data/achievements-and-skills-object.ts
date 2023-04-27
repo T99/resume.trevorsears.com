@@ -10,28 +10,40 @@ export type AchievementsAndSkillsObject = {
 
 export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 	{
+		name: "JavaScript",
+	},
+	{
+		name: "TypeScript",
+	},
+	{
+		name: "Rust",
+	},
+	{
+		name: "PHP",
+	},
+	{
+		name: "Dash/Bash Scripting",
+	},
+	{
 		name: "C",
 	},
 	{
 		name: "C++",
 	},
 	{
-		name: "Java",
+		name: "C#/.NET",
 	},
 	{
-		name: "PHP",
+		name: "Java",
 	},
 	{
 		name: "Python",
 	},
 	{
-		name: "Rust",
+		name: "Go",
 	},
 	{
-		name: "JavaScript",
-	},
-	{
-		name: "TypeScript",
+		name: "Ruby",
 	},
 	{
 		name: "HTML",
@@ -46,20 +58,32 @@ export const PROGRAMMING_LANGUAGES: AchievementsAndSkillsObject[] = [
 		name: "SQL (MySQL, PSQL)",
 	},
 	{
-		name: "Bash Scripting",
+		name: "Powershell Scripting",
 	},
 	{
-		name: "Powershell Scripting",
+		name: "Regular Expressions (PCRE, etc.)",
 	},
 ];
 
 export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 	AchievementsAndSkillsObject[] = [
 	{
-		name: "*nix Shell",
+		name: "ReactJS",
 	},
 	{
-		name: "Advanced *nix & Windows Literacy",
+		name: "NextJS",
+	},
+	{
+		name: "Advanced *nix Shell",
+	},
+	{
+		name: "MongoDB/NoSQL",
+	},
+	{
+		name: "NodeJS & NPM",
+	},
+	{
+		name: "Advanced Git",
 	},
 	{
 		name: "Windows Command Line/Powershell",
@@ -74,19 +98,10 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "MySQL",
 	},
 	{
-		name: "SQL Server",
-	},
-	{
 		name: "Postgres",
 	},
 	{
-		name: "NodeJS & NPM",
-	},
-	{
-		name: "ReactJS",
-	},
-	{
-		name: "NextJS",
+		name: "Vercel",
 	},
 	{
 		name: "Vue",
@@ -96,6 +111,9 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 	},
 	{
 		name: "Webpack, Babel, Browserify",
+	},
+	{
+		name: "Cloudflare",
 	},
 	{
 		name: "DigitalOcean",
