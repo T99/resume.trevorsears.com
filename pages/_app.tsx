@@ -1,6 +1,7 @@
 import { SerializedStyles, css, Global } from '@emotion/react';
 import type { AppProps } from 'next/app';
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react"
 
 const globalStyles: SerializedStyles = css({
 	":root": {
@@ -42,6 +43,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			</Script>
 			<Global styles={globalStyles} />
 			<Component {...pageProps} />
+			<Analytics />
 		</>
 	);
 	
