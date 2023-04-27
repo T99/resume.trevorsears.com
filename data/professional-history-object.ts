@@ -21,8 +21,9 @@ export const PROFESSIONAL_HISTORY: ProfessionalHistoryObject[] = [
 		description: "Developed a scratch-built front-end SPA framework for " +
 			"building highly dynamic and interactive web apps that was used " +
 			"as the engine of Ampel Feedback’s flagship customer feedback " +
-			"kiosk. Highly independent workflow, operating remotely to " +
-			"Traverse City while living in Houghton, MI."
+			"kiosk. Also utilized React and Redux to create a multi-tenant " +
+			"management dashboard for clients. Highly independent workflow, " +
+			"operating remotely to Traverse City while living in Houghton, MI."
 	},
 	{
 		companyName: "Knorr Marketing",
@@ -33,7 +34,7 @@ export const PROFESSIONAL_HISTORY: ProfessionalHistoryObject[] = [
 			"CMS that specialized in the area of furniture eCommerce " +
 			"websites for a host of international clients. Operated as a " +
 			"member of a small team responsible for backing 40+ sites, as " +
-			"well as a database catalogue of hundreds of thousands of " +
+			"well as a database/catalogue of hundreds of thousands of " +
 			"products, associated product information, and eCommerce data."
 		
 	},
