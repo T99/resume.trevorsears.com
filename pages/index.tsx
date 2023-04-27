@@ -124,7 +124,7 @@ const Home: NextPage = (): ReactElement => {
 					{professionalHistory}
 				</ResumeSection>
 				
-				<ResumeSection title="Programming Languages">
+				<ResumeSection title="Programming & Scripting Languages">
 					<Achievements achievements={PROGRAMMING_LANGUAGES} />
 				</ResumeSection>
 				
