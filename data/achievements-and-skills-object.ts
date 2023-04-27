@@ -113,6 +113,9 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "Webpack, Babel, Browserify",
 	},
 	{
+		name: "Cloudflare",
+	},
+	{
 		name: "DigitalOcean",
 	},
 	{
