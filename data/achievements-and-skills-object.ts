@@ -80,7 +80,7 @@ export const PROGRAMMING_FRAMEWORKS_AND_TECHNOLOGIES:
 		name: "GSuite/Google Workspace Management",
 	},
 	{
-		name: "Advanced Git Literacy",
+		name: "Advanced Git",
 	},
 	{
 		name: "MySQL",
