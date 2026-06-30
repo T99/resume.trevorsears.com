@@ -4,46 +4,21 @@
  * Project: resume.trevorsears.com
  */
 
-import { css, SerializedStyles } from "@emotion/react";
-import React, { FunctionComponent, ReactElement, ReactNode } from "react";
+import type { FunctionComponent, ReactNode } from "react";
 
 export type Props = Readonly<{ 
 	title?: string,
 	children: ReactNode,
 }>;
 
-const outerContainerStyles: SerializedStyles = css({
-	width: "100%",
-	padding: "7px",
-});
-
-const sectionTitleStyles: SerializedStyles = css({
-	margin: "0 8px",
-	padding: "10px 8px",
-	fontWeight: "bold",
-	fontSize: "1.75rem",
-	"@media print": {
-		borderBottom: "2px solid black",
-	},
-});
-
-const innerContainerStyles: SerializedStyles = css({
-	padding: "16px",
-	borderRadius: "12px",
-	backgroundColor: "#FFF3",
-});
-
-export const ResumeSection: FunctionComponent<Props> = (
-	{ title, children }: Props
-): ReactElement => {
-	
-	return (
-		<div css={outerContainerStyles}>
-			{title ? <h2 css={sectionTitleStyles}>{title}</h2> : null}
-			<div css={innerContainerStyles}>
-				{children}
-			</div>
+export const ResumeSection: FunctionComponent<Props> = ({
+	title,
+	children,
+}: Props): ReactNode => (
+	<div className="w-full p-2">
+		{title ? <h3 className="mx-2 py-2.5 px-2 font-bold text-3xl print:border-b-2 print:border-b-black">{title}</h3> : null}
+		<div className="p-4 rounded-xl bg-[#FFF3]">
+			{children}
 		</div>
-	);
-	
-};
+	</div>
+);
