@@ -4,71 +4,28 @@
  * Project: resume.trevorsears.com
  */
 
-import { ProfessionalHistoryObject } from "../data/professional-history-object";
-import { css, SerializedStyles } from "@emotion/react";
-import React, { FunctionComponent, ReactElement, ReactNode } from "react";
-import {
-	AchievementsAndSkillsObject
-} from "../data/achievements-and-skills-object";
+import type { FunctionComponent, ReactNode } from "react";
+import type { AchievementsAndSkillsObject } from "@/data/achievements-and-skills-object";
 
 export type Props = Readonly<{
 	achievements: AchievementsAndSkillsObject[],
 }>;
 
-const printMediaQuery: string = "@media print";
-
-const outerContainerStyles: SerializedStyles = css({
-	display: "flex",
-	flexDirection: "column",
-	justifyContent: "center",
-	alignItems: "center",
-});
-
-const innerContainerStyles: SerializedStyles = css({
-	width: "100%",
-	display: "flex",
-	flexDirection: "row",
-	flexWrap: "wrap",
-	justifyContent: "center",
-	alignItems: "flex-start",
-	[printMediaQuery]: {
-		justifyContent: "flex-start",
-	}
-});  
-
-const achievementContainerStyles: SerializedStyles = css({
-	minWidth: "50px",
-	padding: "8px 16px",
-	borderRadius: "6px",
-	margin: "8px 16px",
-	backgroundColor: "#FFF1",
-	[printMediaQuery]: {
-		minWidth: "unset",
-		padding: 0,
-		margin: "8px 24px",
-	}
-});
-
-const achievementTextStyles: SerializedStyles = css({
-	textAlign: "center",
-	fontFamily: "'Fauna One', sans-serif",
-});
-
 export const Achievements: FunctionComponent<Props> = (
 	{ achievements }: Props,
-): ReactElement => {
+): ReactNode => {
 	
 	const items: ReactNode = achievements.map(
 		({ name }: AchievementsAndSkillsObject) => (
-			<div key={name} css={achievementContainerStyles}>
-				<p css={achievementTextStyles}>{name}</p>
+			<div key={name} className="not-print:min-w-12 py-2 px-4 my-2 mx-4 rounded-lg bg-[#FFF1] print:p-0 print:mx-6">
+				<p className="text-center font-(family-name:--font-header)">{name}</p>
 			</div>
 		)
 	);
 	
 	return (
-		<div css={outerContainerStyles}>
-			<div css={innerContainerStyles}>
+		<div className="flex flex-col justify-center items-center">
+			<div className="w-full flex flex-row flex-wrap justify-center items-start print:justify-start">
 				{items}
 			</div>
 		</div>
