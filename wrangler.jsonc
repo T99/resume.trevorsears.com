@@ -24,13 +24,5 @@
       "persist": true,
       "head_sampling_rate": 1
     }
-  },
-  "env": {
-    "production": {
-      "route": "resume.trevorsears.com/*"
-    },
-    "development": {
-      "route": "development.resume.trevorsears.com/*"
-    }
   }
 }
